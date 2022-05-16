@@ -1,0 +1,48 @@
+<template>
+  <div id="app">
+  <paginated-list :list-data="people"/>  
+</div>
+
+
+</template>
+
+<script src="./script.js"></script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+#app{
+  width:80%;
+  margin:auto;
+}
+ul{
+  padding: 4px 4px;
+  border: 1px solid black;
+  
+}
+li{
+  list-style-type:none;
+  padding:4px 4px;
+}
+li:hover{
+  background-color:#eee;
+}
+li:nth-child(2n){
+  background-color:#ddd;
+}
+li:nth-child(2n):hover{
+  background-color:#ccc;
+}
+
+button{
+  width:100px;
+  height:40px;
+  background-color:#eef;
+}
+
+button:hover{
+  cursor:pointer;
+}
+button:hover:disabled{
+  cursor:not-allowed;
+}
+</style>
